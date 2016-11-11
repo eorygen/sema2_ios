@@ -31,3 +31,39 @@ Requirements:
 
  - Mac OS
  - XCode
+
+Installation:
+
+In Terminal, type the following:
+
+$ cd Path_to/sema2_ios/app
+
+$ sudo gem install -n /usr/local/bin/cocoapods
+
+Install third party library dependencies:
+
+$ pod install
+
+If you get errors, try changing Podfile file target 'sema2' to target 'sema2 - acu'. Run pod install again.
+
+Open file sema2.xcworkspace
+Click Product > Edit Scheme
+Click Build > Add Pods library and moved them to top of list
+Click Clean and Build again
+
+NOTE: Podfile target must be the same as xcode build target eg. “sema2 – acu”
+If not clean and close project, run $pod install, open .xcworkspace > build again
+
+Go to sema2 - acu > Build Settings > Packaging > Info.plist File > Debug > change to sema2/Info-dev.plist
+
+Add to Info-dev.plist: (to avoid Secure protocol error)
+
+<key>NSAppTransportSecurity</key>
+<dict>
+	<key>NSAllowsArbitraryLoads</key>
+	<true/>
+</dict>
+
+Click the Play button to build and deploy the app to the simulator.
+
+
