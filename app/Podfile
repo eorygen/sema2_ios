@@ -1,0 +1,19 @@
+# Uncomment this line to define a global platform for your project
+ platform :ios, '7.0'
+
+target 'sema2' do
+    pod 'FlatUIKit'
+    pod 'AFNetworking', '~> 2.5.1'
+    pod 'UIAlertView+Blocks'
+    pod 'AFNetworkActivityLogger'
+    pod 'pop'
+    pod 'SVProgressHUD'
+    pod 'SAMCategories'
+    pod 'Realm',  :git => "https://github.com/realm/realm-cocoa.git", :branch => "master"
+    pod 'JWTDecode'
+    pod 'TPKeyboardAvoiding'
+    pod 'CupertinoYankee'
+    pod 'CWStatusBarNotification', '~> 2.2.4'
+    pod 'AttributedMarkdown', :git => 'https://github.com/dreamwieber/AttributedMarkdown.git'
+    pod 'ASValueTrackingSlider'
+end

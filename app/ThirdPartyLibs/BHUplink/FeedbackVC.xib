@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6250" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <navigationController id="Ffp-nd-4m4">
+            <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+            <navigationBar key="navigationBar" contentMode="scaleToFill" id="Pd6-ex-118">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                <autoresizingMask key="autoresizingMask"/>
+            </navigationBar>
+            <viewControllers>
+                <viewController id="ZdC-5k-mPf" customClass="FeedbackVC">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="reH-2K-IfN"/>
+                        <viewControllerLayoutGuide type="bottom" id="f6y-Qk-uZB"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="iZl-Xd-o6Y">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q6I-VZ-UMW">
+                                <rect key="frame" x="26" y="84" width="268" height="76"/>
+                                <string key="text">Having a problem using the app or want to know more about a particular feature?
+
+Enter your feedback below and we will get back to you.</string>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-LightItalic" family="Helvetica Neue" pointSize="13"/>
+                                <color key="textColor" white="0.25" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Enter your feedback or question here." translatesAutoresizingMaskIntoConstraints="NO" id="tut-uj-GpU">
+                                <rect key="frame" x="16" y="170" width="288" height="120"/>
+                                <color key="backgroundColor" white="0.90000000000000002" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="120" id="kyJ-Th-VDs"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AJe-kq-oJA">
+                                <rect key="frame" x="90" y="310" width="140" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="140" id="bP0-kH-oUI"/>
+                                </constraints>
+                                <state key="normal" title="Send Feedback">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="sendTapped:" destination="ZdC-5k-mPf" eventType="touchUpInside" id="nHO-yM-J9o"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="AJe-kq-oJA" secondAttribute="centerX" id="BYe-dB-Gyf"/>
+                            <constraint firstItem="Q6I-VZ-UMW" firstAttribute="top" secondItem="reH-2K-IfN" secondAttribute="bottom" constant="20" id="GWg-rh-g2O"/>
+                            <constraint firstItem="tut-uj-GpU" firstAttribute="trailing" secondItem="iZl-Xd-o6Y" secondAttribute="trailingMargin" id="SAA-hF-ayi"/>
+                            <constraint firstItem="tut-uj-GpU" firstAttribute="leading" secondItem="iZl-Xd-o6Y" secondAttribute="leadingMargin" id="dQU-t1-acP"/>
+                            <constraint firstItem="AJe-kq-oJA" firstAttribute="top" secondItem="tut-uj-GpU" secondAttribute="bottom" constant="20" id="l39-RU-hWF"/>
+                            <constraint firstItem="Q6I-VZ-UMW" firstAttribute="leading" secondItem="iZl-Xd-o6Y" secondAttribute="leadingMargin" constant="10" id="lak-0i-ah0"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Q6I-VZ-UMW" secondAttribute="trailing" constant="10" id="mgA-UA-gHw"/>
+                            <constraint firstItem="tut-uj-GpU" firstAttribute="top" secondItem="Q6I-VZ-UMW" secondAttribute="bottom" constant="10" id="ubQ-NG-r16"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Send Us Feedback" id="xMg-PQ-hPZ"/>
+                    <connections>
+                        <outlet property="content" destination="tut-uj-GpU" id="S4p-6Y-sp2"/>
+                    </connections>
+                </viewController>
+            </viewControllers>
+            <point key="canvasLocation" x="21" y="276"/>
+        </navigationController>
+    </objects>
+</document>
