@@ -1,6 +1,9 @@
 # SEMA2 iOS App
 
-![SEMA Smartphone Ecological Momentary Assessment](screenshots/Screenshot_SEMA_IOS_1.png?raw=true “SEMA2 iOS App”)
+<p align="center">
+  <img src="screenshots/Screenshot_SEMA_IOS_1.png" width="350" alt="SEMA Smartphone Ecological Momentary Assessment" title="SEMA2"/>
+</p>
+
 
 ## Project Summary:
 
